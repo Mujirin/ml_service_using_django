@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path, include
 from users import views as user_view
 
+admin.site.site_header = 'ML Service'	# default: "Django Administration"
+admin.site.index_title = 'Site Administration'  # default: "Site administration"
+admin.site.site_title = 'ML Service Site Admin'		# default: "Django site admin"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
