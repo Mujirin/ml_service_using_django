@@ -5,7 +5,7 @@ This notes is to improve styling in the template.
 	$ conda install -c conda-forge django-crispy-forms
 
 ### Adding the crispy form to the setting
-In settings.py add the following in bold in INSTALLED_APPS settings.py
+In settings.py add the "crispy_forms" in bold in INSTALLED_APPS settings.py
 
 	INSTALLED_APPS = [
 	    'users.apps.UsersConfig',
