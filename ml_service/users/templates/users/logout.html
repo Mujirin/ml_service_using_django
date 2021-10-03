@@ -1,0 +1,15 @@
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block page_name %}
+	<a style="font-size: 13px;" class="navbar-brand mr-4" href=""><span>&laquo;</span>&nbsp&nbsp&nbsp&nbsp {{page_name}}</a>
+{% endblock %}
+
+{% block content %}
+	<h2>You have been logged out</h2>
+	<div class="border-top pt-3">
+		<small class="text-muted">
+			<a href="{% url 'login' %}">Log In Again</a>
+		</small>
+	</div>
+{% endblock content %}

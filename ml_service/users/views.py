@@ -9,9 +9,11 @@ def register(request):
 			form.save()
 			username = form.cleaned_data.get('username')
 			# Flash message
-			messages.success(request, f'Account created for {username}')
-			# return redirect('blog-home')
-			return render(request, 'users/register.html', {'form': form})
+			messages.success(request, f'Your account has been created! You are now able to log in')
+			return redirect('login')
 	else:
 		form = UserRegistrationForm()
 	return render(request, 'users/register.html', {'form': form})
+
+def home(request):
+	return render(request, 'users/home.html', {})
