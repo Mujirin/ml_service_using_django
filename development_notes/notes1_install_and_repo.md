@@ -52,11 +52,13 @@ Make sure the setingan_rahasia.py did not included in the list file that added t
 	$ python manage.py migrate
 ## Creating superuser
 Please adjust to your own information
+
 	$ python manage.py createsuperuser
 	$ Username (leave blank to use 'thomas'): mujirin
 	$ Email address: mujirin@ui.ac.id             
 	$ Password: 
 	$ Password (again): 
+
 Superuser created successfully.
 Then start the development server
 
