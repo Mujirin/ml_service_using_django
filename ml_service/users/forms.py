@@ -9,3 +9,10 @@ class UserRegistrationForm(UserCreationForm):
 	class Meta:
 		model = User
 		fields = ['username', 'password1', 'password2', 'email']
+
+
+class PredictionForm(forms.Form):
+	petal_length = forms.FloatField()
+
+	class Meta:
+		fields = ['petal_length']

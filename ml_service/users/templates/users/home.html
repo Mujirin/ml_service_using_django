@@ -7,4 +7,17 @@
 
 {% block content %}
 	<h1>HOME PAGE</h1>
+	<div class="content-section">
+		<form method="POST">
+			{% csrf_token %}
+			<fieldset class="form-group">
+				{{ form|crispy }}
+			</fieldset>
+			<div class="form-group">
+				<button class="btn btn-outline-info" type="submit">Predict</button>
+			</div>
+		</form>
+	</div>
+
+
 {% endblock content %}
